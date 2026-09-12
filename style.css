@@ -249,7 +249,7 @@ section.visible .mes-año {
   border-bottom: 145px solid #f2eedf;
   z-index: 4;
   /* Sutil sombra para que resalte por encima de las aletas laterales */
-  filter: drop-shadow(0px -3px 4px rgba(0, 0, 0, 0.08));
+  filter: drop-shadow(0px -20px 15px rgba(0, 0, 0, 0.08));
 }
 
 /* Solapa Superior (La que se abre) */
