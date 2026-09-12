@@ -190,8 +190,10 @@ section.visible .mes-año {
   width: 380px;
   height: 260px;
   position: relative;
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
+  /* Sombra exterior más intensa y realista */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22), 0 5px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  border-radius: 4px; /* Unifica el borde */
 }
 
 /* Fondo interior del sobre */
@@ -246,6 +248,8 @@ section.visible .mes-año {
   border-right: 190px solid transparent;
   border-bottom: 145px solid #f2eedf;
   z-index: 4;
+  /* Sutil sombra para que resalte por encima de las aletas laterales */
+  filter: drop-shadow(0px -3px 4px rgba(0, 0, 0, 0.08));
 }
 
 /* Solapa Superior (La que se abre) */
@@ -261,7 +265,8 @@ section.visible .mes-año {
   z-index: 5;
   transform-origin: top center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), z-index 0.3s;
-  filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.06));
+  /* Doble sombra para lograr la profundidad exacta de la imagen de referencia */
+  filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.18)) drop-shadow(0px 4px 4px rgba(0,0,0,0.12));
 }
 
 /* Estado abierto de la solapa */
@@ -277,7 +282,6 @@ section.visible .mes-año {
   border-radius: 50%;
   background: transparent;
   border: none;
-  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,10 +289,12 @@ section.visible .mes-año {
   position: absolute;
   bottom: 45px;
   left: 50%;
-  margin-left: -55px; /* Para centrarlo perfectamente */
+  margin-left: -55px;
   z-index: 99;
   animation: pulsar 2s ease-in-out infinite;
   transition: opacity 0.4s ease, transform 0.4s ease;
+  /* Sombra para darle volumen al sello de cera */
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25));
 }
 
 #sello:hover {
