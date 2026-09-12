@@ -317,24 +317,25 @@ section.visible .mes-año {
 }
 
 .sobre-texto {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 14px;
-  font-style: italic;
-  color: var(--texto-medio); /* Color acorde a tu paleta */
-  letter-spacing: 3px;
+  font-family: "The Nautigal", cursive; /* Sintaxis corregida */
+  font-size: 32px; /* Aumentamos el tamaño porque esta fuente es pequeña por naturaleza */
+  color: var(--texto-medio); 
+  
+  /* Eliminamos 'letter-spacing' y 'text-transform: uppercase' 
+     para que las letras cursivas se conecten correctamente */
+     
   position: absolute;
-  bottom: 15px;
+  top: calc(50% - 180px); 
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
   z-index: 99;
-  text-transform: uppercase;
   pointer-events: none;
   transition: opacity 0.4s ease;
 }
 
 /* Ocultar texto cuando se abre */
-#sobre.abierto .sobre-texto {
+#sobre.abierto ~ .sobre-texto {
   opacity: 0;
 }
 
