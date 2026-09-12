@@ -1080,28 +1080,3 @@ LEMA
   color: var(--texto-oscuro) !important;
 }
 
-/* =========================================
-   AJUSTES RESPONSIVOS PARA TELÉFONOS
-   ========================================= */
-
-/* Para teléfonos medianos/estándar (pantallas menores a 410px) */
-@media (max-width: 410px) {
-  #sobre {
-    transform: scale(0.85); /* Reduce todo el sobre al 85% de su tamaño */
-  }
-  .sobre-texto {
-    font-size: 28px; /* Achica un poquito el texto */
-    top: calc(50% - 150px); /* Ajusta la distancia para que no quede muy lejos */
-  }
-}
-
-/* Para teléfonos muy pequeños (pantallas menores a 360px) */
-@media (max-width: 360px) {
-  #sobre {
-    transform: scale(0.75); /* Reduce el sobre al 75% */
-  }
-  .sobre-texto {
-    font-size: 24px; 
-    top: calc(50% - 135px); 
-  }
-}
