@@ -372,7 +372,7 @@ section.visible .mes-año {
 }
 
 .corona {
-  width: clamp(90px, 22vw, 130px);
+  width: clamp(130px, 25vw, 135px);
   height: auto;
   display: block;
   margin: 0 auto -30px;
