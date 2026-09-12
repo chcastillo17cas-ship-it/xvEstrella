@@ -317,13 +317,15 @@ section.visible .mes-año {
 }
 
 .sobre-texto {
-  font-family: "The Nautigal", cursive; /* Sintaxis corregida */
-  font-size: 32px; /* Aumentamos el tamaño porque esta fuente es pequeña por naturaleza */
+  font-family: "The Nautigal", cursive;
+  font-size: 32px;
   color: var(--texto-medio); 
   
-  /* Eliminamos 'letter-spacing' y 'text-transform: uppercase' 
-     para que las letras cursivas se conecten correctamente */
-     
+  /* --- SOMBRA PARA DESTACAR EL TEXTO --- */
+  /* Opción 1: Resplandor blanco (Recomendado para fondos claros/rosados) */
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9), 0px 0px 15px rgba(255, 255, 255, 0.7);
+  /* ------------------------------------- */
+
   position: absolute;
   top: calc(50% - 180px); 
   left: 50%;
