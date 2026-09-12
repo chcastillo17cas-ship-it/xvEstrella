@@ -167,7 +167,7 @@ section.visible .mes-año {
   height: 100%;
   
   /* --- INICIO DEL CAMBIO DE FONDO --- */
-  background-image: url("./assets/images/BK-sobre.jpg.jpeg"); /* Cambia esto por la ruta de tu imagen local */
+  background-image: url("./assets/images/bk2.jpg.jpeg"); /* Cambia esto por la ruta de tu imagen local */
   background-size: cover;      /* Asegura que la imagen cubra toda la pantalla */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat;/* Evita que la imagen se repita */
